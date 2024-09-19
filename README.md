@@ -1,51 +1,61 @@
-CareHub - Healthcare Patient Management System
-CareHub is a comprehensive healthcare patient management system designed to streamline the patient-doctor interaction. Built with Next.js, TypeScript, and TailwindCSS, this application allows patients to register, book, and manage appointments, while administrators can confirm, reschedule, or cancel appointments. It also features Twilio SMS notifications to enhance patient communication.
+# CareHub - Healthcare Patient Management System
 
-📋 Table of Contents
-Key Features
-Tech Stack
-Installation and Setup
-Usage Guide
-Project Structure
-API Endpoints
-Features Breakdown
-Upcoming Features
-Contributing
-License
-Support
+CareHub is a comprehensive **healthcare patient management system** designed to streamline the patient-doctor interaction. Built with **Next.js**, **TypeScript**, and **TailwindCSS**, this application allows patients to register, book, and manage appointments, while administrators can confirm, reschedule, or cancel appointments. It also features **Twilio SMS notifications** to enhance patient communication.
 
-🏥 Key Features
-Patient Registration: Patients can create accounts, complete profiles, and securely log in to manage their medical appointments.
-Appointment Booking: Patients can browse available doctors, select convenient appointment times, and book them with ease.
-Admin Dashboard: Admin users have access to a dedicated dashboard for viewing, scheduling, confirming, and canceling appointments.
-SMS Notifications: Integrated with Twilio to send real-time SMS notifications to patients, confirming their appointment details.
-Responsive Design: Fully optimized for all screen sizes, providing a seamless experience on mobile, tablet, and desktop devices.
-Secure File Uploads: Patients can upload and store files, such as medical records, using Appwrite Storage.
-Error Tracking: Sentry integration for real-time performance monitoring and error reporting, ensuring a reliable application.
+---
 
-⚙️ Tech Stack
-Frontend: Next.js, React, TypeScript, TailwindCSS, ShadCN
-Backend: Appwrite (for storage and APIs)
-Authentication: NextAuth (for secure user authentication with Google OAuth support)
-Notifications: Twilio API (for sending SMS notifications)
-Performance Monitoring: Sentry (for error tracking and performance optimization)
-Testing: Jest, React Testing Library
+## 📋 Table of Contents
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Installation and Setup](#installation-and-setup)
+- [Usage Guide](#usage-guide)
+- [Project Structure](#project-structure)
+- [API Endpoints](#api-endpoints)
+- [Features Breakdown](#features-breakdown)
+- [Upcoming Features](#upcoming-features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-📦 Installation and Setup
-Prerequisites
-Node.js (v14 or higher)
-npm or yarn
-Appwrite for backend storage and file uploads
-Twilio Account for SMS notifications
-MongoDB or other backend services if required
-Clone the Repository
-bash
-Copy code
+---
+
+## 🏥 Key Features
+
+- **Patient Registration**: Patients can create accounts, complete profiles, and securely log in to manage their medical appointments.
+- **Appointment Booking**: Patients can browse available doctors, select convenient appointment times, and book them with ease.
+- **Admin Dashboard**: Admin users have access to a dedicated dashboard for viewing, scheduling, confirming, and canceling appointments.
+- **SMS Notifications**: Integrated with Twilio to send real-time SMS notifications to patients, confirming their appointment details.
+- **Responsive Design**: Fully optimized for all screen sizes, providing a seamless experience on mobile, tablet, and desktop devices.
+- **Secure File Uploads**: Patients can upload and store files, such as medical records, using **Appwrite Storage**.
+- **Error Tracking**: Sentry integration for real-time performance monitoring and error reporting, ensuring a reliable application.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: Next.js, React, TypeScript, TailwindCSS, ShadCN
+- **Backend**: Appwrite (for storage and APIs)
+- **Authentication**: NextAuth (for secure user authentication with Google OAuth support)
+- **Notifications**: Twilio API (for sending SMS notifications)
+- **Performance Monitoring**: Sentry (for error tracking and performance optimization)
+- **Testing**: Jest, React Testing Library
+
+---
+
+## 📦 Installation and Setup
+
+### Prerequisites
+- **Node.js** (v14 or higher)
+- **npm** or **yarn**
+- **Appwrite** for backend storage and file uploads
+- **Twilio Account** for SMS notifications
+- **MongoDB** or other backend services if required
+
+### Clone the Repository
+```bash
 git clone https://github.com/username/carehub.git
 cd carehub
-Install Dependencies
-bash
-Copy code
+
 npm install
 or
 
@@ -55,8 +65,7 @@ yarn install
 Environment Variables
 Create a .env.local file in the root directory and add the following environment variables:
 
-env
-Copy code
+
 NEXTAUTH_URL=http://localhost:3000
 APPWRITE_PROJECT_ID=your_appwrite_project_id
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
@@ -65,11 +74,11 @@ NEXT_PUBLIC_TWILIO_PHONE=your_twilio_phone_number
 NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
 Run the Application
 bash
-Copy code
+
 npm run dev
 The app will now be running at http://localhost:3000.
 
-🧑‍💻 Usage Guide
+ 🧑‍💻 Usage Guide
 
 Patient Side
 Register and Login: Patients can register by providing basic information and log in via Google OAuth or email/password.
@@ -100,6 +109,8 @@ carehub/
 ├── README.md           # Project documentation
 ├── package.json        # Dependencies and scripts
 └── tsconfig.json       # TypeScript configuration
+
+
 📊 API Endpoints
 Here's a quick overview of the API endpoints used in this project:
 
