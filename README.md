@@ -52,7 +52,7 @@ CareHub is a comprehensive **healthcare patient management system** designed to 
 - **MongoDB** or other backend services if required
 
 ### Clone the Repository
-```bash
+
 git clone https://github.com/username/carehub.git
 cd carehub
 
@@ -78,20 +78,21 @@ bash
 npm run dev
 The app will now be running at http://localhost:3000.
 
- 🧑‍💻 Usage Guide
+## 🧑‍💻 Usage Guide
 
-Patient Side
+### Patient Side
 Register and Login: Patients can register by providing basic information and log in via Google OAuth or email/password.
 Book Appointments: Browse available time slots and book appointments with selected doctors.
 View Appointments: Users can view their upcoming and past appointments on the patient dashboard.
 Receive Notifications: Once an appointment is confirmed, patients receive an SMS with the appointment details.
-Admin Side
+
+### Admin Side
 Admin Dashboard: Admin users have access to a dashboard where they can view all upcoming and past appointments.
 Confirm/Schedule Appointments: Admins can confirm and update appointment schedules.
 Cancel Appointments: Admins can cancel appointments, which triggers an SMS notification to inform patients.
 File Management: Admins can upload, manage, and delete patient files.
-
-🛠️ Project Structure
+ 
+ ## 🛠️ Project Structure
 bash
 Copy code
 carehub/
@@ -111,20 +112,21 @@ carehub/
 └── tsconfig.json       # TypeScript configuration
 
 
-📊 API Endpoints
+## 📊 API Endpoints
 Here's a quick overview of the API endpoints used in this project:
 
-Patient Endpoints
+### Patient Endpoints
 POST /api/patient/register: Register a new patient
 GET /api/patient/appointments: Fetch all appointments for a patient
-Admin Endpoints
+
+### Admin Endpoints
 GET /api/admin/appointments: Fetch all appointments for admin view
 POST /api/admin/confirm: Confirm an appointment
 POST /api/admin/cancel: Cancel an appointment
 POST /api/admin/reschedule: Reschedule an appointment
 
 
-📈 Features Breakdown
+## 📈 Features Breakdown
 
 Frontend
 
@@ -148,7 +150,7 @@ File Upload
 Used Appwrite Storage for secure file uploads, allowing users to attach medical documents.
 
 
-🚀 Upcoming Features
+## 🚀 Upcoming Features
 Doctor Profiles: View detailed doctor profiles and their specialties.
 Appointment History: Patients can view past appointments and access medical records.
 Medical Records Management: Implement a feature for uploading, managing, and sharing medical records with healthcare providers.
